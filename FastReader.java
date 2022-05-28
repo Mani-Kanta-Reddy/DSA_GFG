@@ -1,5 +1,3 @@
-package fastreader;
-
 import java.util.*;
 import java.io.*;
 

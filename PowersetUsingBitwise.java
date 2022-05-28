@@ -1,6 +1,5 @@
 import java.util.*;
 import java.io.*;
-import fastreader.FastReader;
 
 public class PowersetUsingBitwise {
 	public static void main(String[] args) {

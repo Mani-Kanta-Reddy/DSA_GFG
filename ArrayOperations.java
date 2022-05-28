@@ -1,6 +1,5 @@
 import java.util.*;
 import java.io.*;
-import fastreader.FastReader;
 
 public class ArrayOperations {
 	public static void main(String[] args) {
@@ -9,12 +8,13 @@ public class ArrayOperations {
 		arr[1] = 2;
 		arr[2] = 4;
 		arr[3] = 5; // arr = [1,2,4,5,_,_,_]
+		System.out.println("Before Everything => " + Arrays.toString(arr));
 		int pos = 3;
 		int ele = 3;
 		insertAtPos(arr, pos, ele);
 		System.out.println("Inserted 3 at idx 3 -> " + Arrays.toString(arr));
 		deleteAtPos(arr, pos);
-		System.out.println("Deleted Elem at idx " + pos + Arrays.toString(arr));
+		System.out.println("Deleted Elem at position " + pos + Arrays.toString(arr));
 		ele = 5;
 		deleteEle(arr, ele);
 		System.out.println("Deleted Element: " + ele + Arrays.toString(arr));

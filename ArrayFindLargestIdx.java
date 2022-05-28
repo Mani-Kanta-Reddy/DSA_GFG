@@ -1,6 +1,5 @@
 import java.util.*;
 import java.io.*;
-import fastreader.FastReader;
 
 public class ArrayFindLargestIdx {
 	public static void main(String[] args) {
@@ -11,7 +10,7 @@ public class ArrayFindLargestIdx {
 						  .toArray();
 		// System.out.println(Arrays.toString(arr));
 		System.out.println(naive(arr)); //O(n ^ 2)
-		System.out.println(findIdxOfLargest(arr));
+		System.out.println(findIdxOfLargest(arr)); //Theta(n)
 		
 	}
 	static int naive(int[] arr) {

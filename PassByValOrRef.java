@@ -1,6 +1,5 @@
 import java.util.*;
 import java.io.*;
-import fastreader.FastReader;
 
 public class PassByValOrRef {
 	public static void main(String[] args) {
@@ -55,7 +54,7 @@ public class PassByValOrRef {
 	}
 	static void passPrimitive(Integer x, Integer y) {
 		x = x + 1;
-		y = y = 1;
+		y = y + 1;
 	}
 }
 
