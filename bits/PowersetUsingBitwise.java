@@ -8,11 +8,15 @@ public class PowersetUsingBitwise {
 		/*
 		input -> set = {a,b}
 		output -> {"", a, b, "ab"}
-		counter		binaryequi		output
-		0				00			  ""
-		1				01			  "a"
-		2				10	    	  "b"
-		3				11			  "ab"
+		counter		binaryequi		output			
+		0				00			  ""		0		000		""
+		1				01			  "a"		1		001		"a"
+		2				10	    	  "b"		2		010		"b"
+		3				11			  "ab"		3		011		"ab"
+												4		100		"c"
+												5		101		"ac"
+												6		110		"bc"
+												7		111		"abc"
 		*/
 		String input = sc.next();
 		findPowerSet(input);

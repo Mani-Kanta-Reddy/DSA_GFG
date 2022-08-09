@@ -1,0 +1,7 @@
+
+b
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Åö«ô
+N	java:S106"9Replace this use of System.out or System.err by a logger.(«¼Ñ×
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åö«ô
+D
+java:S1481".Remove this unused "subArrSum" local variable.(¨ª°©
