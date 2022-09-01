@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SudokuSolver",
+            "request": "launch",
+            "mainClass": "recursion.SudokuSolver",
+            "projectName": "DSA_GFG_59e4e15"
+        },
+        {
+            "type": "java",
+            "name": "Launch FloodFillAlgo",
+            "request": "launch",
+            "mainClass": "recursion.FloodFillAlgo",
+            "projectName": "DSA_GFG_59e4e15"
+        },
+        {
+            "type": "java",
+            "name": "Launch TinaAndTeddys",
+            "request": "launch",
+            "mainClass": "misc.TinaAndTeddys",
+            "projectName": "DSA_GFG_59e4e15"
+        },
+        {
+            "type": "java",
             "name": "Launch FindMinChangesToMakeEqui",
             "request": "launch",
             "mainClass": "misc.FindMinChangesToMakeEqui",
