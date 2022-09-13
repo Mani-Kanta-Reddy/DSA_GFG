@@ -9,7 +9,7 @@ public class ClimbingStairs
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         long before = System.currentTimeMillis();
-//        int res = totalPossibilities(n);
+        int res = totalPossibilities(n);
         long timeTaken = System.currentTimeMillis() - before;
         int[] qbank = new int[n + 1];
         long before1 = System.currentTimeMillis();
@@ -18,7 +18,9 @@ public class ClimbingStairs
 //        System.out.println(res);
         System.out.println("Time taken by blind recursion " + timeTaken);
         System.out.println("Time taken by smart recursion " + timeTaken1);
-        tabulation(n);
+        int[] dp = new int[n + 1];
+//        int res = tabulation(n, dp);
+        System.out.println(res);
     }
     public static int totalPossibilities(int n) {
         //positive base-case:
@@ -53,11 +55,19 @@ public class ClimbingStairs
         qbank[n] = t1 + t2 + t3;
         return qbank[n];
     }
-    public static int tabulation(int n) {
+    public static int tabulation(int n, int[] dp) {
         //base-case / initialization
-
+        dp[0] = 1;
         //negative case handle intelligently
 
         //recursive-case
+        for(int noOfStairs = 1; noOfStairs <= n; noOfStairs++) {
+            for(int steps = 1; steps <=3; steps++) {
+                if(noOfStairs - steps >= 0) {
+                    dp[noOfStairs] += dp[noOfStairs - steps];
+                }
+            }
+        }
+        return dp[n];
     }
 }
