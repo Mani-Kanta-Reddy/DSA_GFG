@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GenericTree",
+            "request": "launch",
+            "mainClass": "DS.GenericTree",
+            "projectName": "DSA_GFG_59e4e15"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeTwoSortedLists",
+            "request": "launch",
+            "mainClass": "misc.MergeTwoSortedLists",
+            "projectName": "DSA_GFG_59e4e15"
+        },
+        {
+            "type": "java",
+            "name": "Launch WordSearch",
+            "request": "launch",
+            "mainClass": "misc.WordSearch",
+            "projectName": "DSA_GFG_59e4e15"
+        },
+        {
+            "type": "java",
+            "name": "Launch HasPath",
+            "request": "launch",
+            "mainClass": "graphs.HasPath",
+            "projectName": "DSA_GFG_59e4e15"
+        },
+        {
+            "type": "java",
+            "name": "Launch GuessTheNumber",
+            "request": "launch",
+            "mainClass": "misc.GuessTheNumber",
+            "projectName": "DSA_GFG_59e4e15"
+        },
+        {
+            "type": "java",
             "name": "Launch SudokuSolver",
             "request": "launch",
             "mainClass": "recursion.SudokuSolver",
