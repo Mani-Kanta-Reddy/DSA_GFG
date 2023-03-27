@@ -41,21 +41,15 @@ public class Conditionals {
         //switch:
         switch(option) {
             case 1:
-                System.out.println("line 43");
-
-
-
-            break;
+                System.out.println("line 44");
+                break;
             case 2:
-            System.out.println("line 49");
-
-
-            break;
-
+                System.out.println("line 47");
+                break;
             default:
-            System.out.println("line 55");
+            System.out.println("line 50");
 
         }
-        System.out.println("line 58");
+        System.out.println("line 53");
     }
 }

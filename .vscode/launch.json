@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "WrappersReuse",
+            "request": "launch",
+            "mainClass": "basic.WrappersReuse",
+            "projectName": "DSA_GFG_59e4e15"
+        },
+        {
+            "type": "java",
+            "name": "BST",
+            "request": "launch",
+            "mainClass": "DS.BST",
+            "projectName": "DSA_GFG_59e4e15"
+        },
+        {
+            "type": "java",
+            "name": "LongestPathInMaze",
+            "request": "launch",
+            "mainClass": "misc.LongestPathInMaze",
+            "projectName": "DSA_GFG_59e4e15"
+        },
+        {
+            "type": "java",
             "name": "Launch GenericTree",
             "request": "launch",
             "mainClass": "DS.GenericTree",

@@ -161,6 +161,32 @@ public class LinkedLists {
         }
         return oldDataValue;
     }
+
+    public Node reverse() {
+        // 1 -> 2 -> 3 -> 4 -> 5
+        Node prev = null;
+        Node curr = head;
+        while(curr != null) {
+            //before removing the link store
+            Node temp = curr.next;
+            //now break the link and point back
+            curr.next = prev;
+            //advance the prev
+            prev = curr;
+            //advance the curr
+            curr = temp;
+        }
+        return prev;
+    }
+
+    public void printForReverse(Node last) {
+        Node temp = last;
+        while(temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
     //toString()
     @Override
     public String toString() {
@@ -172,6 +198,7 @@ public class LinkedLists {
         }
         return sb.toString();
     }
+    
     public static void main(String[] args) throws OperationNotSupportedException {
         LinkedLists list = new LinkedLists();
         list.add(1);
@@ -180,17 +207,19 @@ public class LinkedLists {
         list.add(5);
         list.add(6);
         // list.add(0, 0);
-        list.add(2, 3);
-        System.out.println(list);
+        // list.add(2, 3);
+        // System.out.println(list);
         // list.remove(1);
         // list.remove(5);
-        System.out.println(list);
+        // System.out.println(list);
         // LinkedLists list2 = new LinkedLists();
         // list2.remove(2);
         // list.remove(2);
         // System.out.println(list.update(1, -1));
         // System.out.println(list.update(99, -1)); //throws NoSuchElementException
-        System.out.println(list.update(99, Integer.valueOf(-2)));
-        System.out.println(list);
+        // System.out.println(list.update(99, Integer.valueOf(-2)));
+        // System.out.println(list);
+        Node headOfReversed = list.reverse();
+        list.printForReverse(headOfReversed);
     }
 }

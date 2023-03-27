@@ -90,7 +90,7 @@ public class SudokuSolver {
                 if(isValid(board, row, col, i)) {
                     board[row][col] = i;
                     solveSudoku(board, nrow, ncol);
-                    board[row][col] = 0;
+                    board[row][col] = 0; //backtracking
                 }
             }
         }
