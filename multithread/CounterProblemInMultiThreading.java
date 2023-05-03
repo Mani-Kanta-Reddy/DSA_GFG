@@ -1,8 +1,10 @@
 package multithread;
+
 public class CounterProblemInMultiThreading {
     static int counter = 0;
     static final int limit = 1_00_000; //1Lakh
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException
+    {
         //create thread
         Thread t1 = new Thread(() -> {
             for(int i = 0; i < limit; i++) {
